@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+
+    <div class="container .mt-20">
+        <div class="jumbotron">
+            <div class="heading">
+                <h3>Click the Number Below:</h3>
+                <h4> Zero (0) and One (1)</h4>
+            </div>
+            <div>
+                <form class="form-group">
+                    <div class="button-class">
+                        <input type="button" value="1" class="btn btn-default" id="numOne" onclick="addToScreen('1')">
+                        <input type="button" value="0" class="btn btn-default" id="numTwo" onclick="addToScreen('0')">
+                        <input type="button" value="C" class="btn btn-default" id="numTwo" onclick="addToScreen('C')">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control .mt-10" disabled name="" id="screenDisplay">
+                    </div>
+
+                    <button class="btn btn-default submit-button">Submit</button>
+                </form>
+            </div>
+            <div >
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
